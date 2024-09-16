@@ -26,5 +26,3 @@ This is my Cloud Resume Challenge built on AWS Cloud. I have built a static webs
 - Lambda function
 - API Gateway
 - Dynamo DB
-
-to be concluded
