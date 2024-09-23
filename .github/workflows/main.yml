@@ -11,12 +11,6 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@master
-        
-      - name: Print Environment Variables
-        run: |
-          echo "AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}"
-          echo "AWS_REGION: ${{ secrets.AWS_REGION }}"
-          echo "SOURCE_DIR: 'frontend'"
 
       - name: sync s3
         uses: jakejarvis/s3-sync-action@master
