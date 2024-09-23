@@ -4,6 +4,10 @@ on:
   push:
     branches:
     - main
+
+- name: Print bucket name
+run: echo "Bucket name: ${{ secrets.AWS_S3_BUCKET }}"
+
     
 jobs:
   copy-website-to-s3-and-invalidate-cloudfront:
