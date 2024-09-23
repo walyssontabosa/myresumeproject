@@ -12,7 +12,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@master
         
-      - name: Debugging: Print Environment Variables
+      - name: Print Environment Variables
         run: |
           echo "AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}"
           echo "AWS_REGION: ${{ secrets.AWS_REGION }}"
