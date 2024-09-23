@@ -5,10 +5,6 @@ on:
     branches:
     - main
 
-- name: Print bucket name
-run: echo "Bucket name: ${{ secrets.AWS_S3_BUCKET }}"
-
-    
 jobs:
   copy-website-to-s3-and-invalidate-cloudfront:
     runs-on: ubuntu-latest
@@ -27,6 +23,11 @@ jobs:
           AWS_REGION: 'us-east-1'
           SOURCE_DIR: 'frontend'
 
+        - name: print bucket name
+          run: echo "Bucket name: ${{ secrets.AWS_S3_BUCKET }}"
+
+    
+
   invalidate-cloudfront-distribution:
     needs: copy-website-to-s3-and-invalidate-cloudfront
     runs-on: ubuntu-latest
@@ -39,3 +40,5 @@ jobs:
           AWS_REGION: "us-east-1"
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+
