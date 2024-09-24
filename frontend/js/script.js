@@ -1,24 +1,19 @@
-// script.js
-
-// Function to get the current count from local storage
-function getAccessCount() {
-    return localStorage.getItem('accessCount') || 0;
+// GET API REQUEST
+async function get_visitors() {
+    // call post api request function
+    //await post_visitor();
+    try {
+        let response = await fetch('https://xzn1day6rf.execute-api.us-east-1.amazonaws.com/visitorcount', {
+            method: 'GET',
+        });
+        let data = await response.json()
+        document.getElementById("visitors").innerHTML = data['count'];
+        console.log(data);
+        return data;
+    } catch (err) {
+        console.error(err);
+    }
 }
 
-// Function to increment the count and update local storage
-function incrementAccessCount() {
-    let count = parseInt(getAccessCount());
-    count++;
-    localStorage.setItem('accessCount', count);
-    return count;
-}
 
-// Function to display the count on the page
-function displayAccessCount() {
-    const count = incrementAccessCount();
-    const accessCountElement = document.getElementById('access-count');
-    accessCountElement.textContent = `This resume has been accessed ${count} times.`;
-}
-
-// Call the function to display the count when the page loads
-window.onload = displayAccessCount;
+get_visitors();
