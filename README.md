@@ -4,7 +4,7 @@ This is my Cloud Resume Challenge, built entirely on AWS Cloud. The project feat
 
 Additionally, I implemented a visitor counter using AWS Lambda functions, written in Python. The entire infrastructure, including the visitor counter, was automated and deployed using Terraform.
 
-Below you can see my project architeture: 
+Below is my project architecture overview:
 
 ![architecture](./assets/images/architecture.png)
 
