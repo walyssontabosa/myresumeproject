@@ -1,19 +1,26 @@
 # Walysson Santos - My resume on AWS
 ## About This Project 
-This is my Cloud Resume Challenge built on AWS Cloud. I have built a static website hosted on AWS S3 bucket, wich I have include a visitor counter built on AWS Lambda functions. To build this website I have worked with HTML, CSS, and JavaScript programing languages. The visitor counter is built with Python and AWS lambda functions. 
+This is my Cloud Resume Challenge, built entirely on AWS Cloud. The project features a static website hosted in an AWS S3 bucket, developed using HTML, CSS, and JavaScript. I utilized Route 53 to manage the domain name, ACM to secure the site with SSL/TLS certificates, and CloudFront for fast content delivery, with automatic redirection of HTTP traffic to HTTPS for enhanced security.
+
+Additionally, I implemented a visitor counter using AWS Lambda functions, written in Python. The entire infrastructure, including the visitor counter, was automated and deployed using Terraform.
+
+Below you can see my project architeture: 
 
 ![architecture](./assets/images/architecture.png)
 
 ## Demo
 
-[View it live here](https://resume.naveenraj.net)
+[View it live here](https://www.walyssonsantos.com)
 
 ## Structure
 
 - `.github/workflows/`: Folder contains CI/CD workflow configurations.
+- `assets/images/`: stores the architecture diagram of the project (architecture.png), which visualizes the architecture of the website and its cloud components.
 - `frontend/`: Folder contains the website.
     - `index.html`: file contains frontend website code.
+    - `css`: contains the stylesheets, including styles.css, which defines the website’s layout and design.
     - `js/visitorcount.js`: file contains visitor counter code to retrieve & update the visitors count.
+- `resume/`: Folder contains the resume PDF file.
 - `infra/`: Folder contains the infrastructure codes.
     - `lambda/lambda_function.py`: Contains the visitor counter code which is deployed on lambda function.
     - `main.tf`: Contains the backend infrastructure written as terraform code.
