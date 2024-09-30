@@ -3,7 +3,7 @@ async function get_visitors() {
     // call post api request function
     //await post_visitor();
     try {
-        let response = await fetch('https://xzn1day6rf.execute-api.us-east-1.amazonaws.com/visitorcount', {
+        let response = await fetch('https://qyr4quqvc4.execute-api.us-east-1.amazonaws.com/prod/visitorcount', {
             method: 'GET',
         });
         let data = await response.json()
