@@ -4,7 +4,7 @@ This is my Cloud Resume Project, built entirely on AWS Cloud. The project featur
 
 Below is my project architecture overview:
 
-![architecture](./assets/images/architecture.png)
+![architecture](./frontend/images/architecture.png)
 
 ## Demo
 
