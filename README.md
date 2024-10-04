@@ -22,8 +22,7 @@ Below is my project architecture overview:
     - `js/visitorcount.js`: file contains visitor counter code to retrieve & update the visitors count.
 - `resume/`: Folder contains the resume PDF file.
 - `infra/`: Folder contains the infrastructure codes.
-    - `lambda/lambda_function.py`: Contains the visitor counter code which is deployed on lambda function.
-    - `main.tf`: Contains the backend infrastructure written as terraform code.
+    - `lambda/lambda.py`: Contains the visitor counter code which is deployed on lambda function.
 
 ## AWS Services Used
 - Route 53
