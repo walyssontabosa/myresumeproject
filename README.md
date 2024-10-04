@@ -1,6 +1,6 @@
 # Walysson Santos - My resume on AWS
 ## About This Project 
-This is my Cloud Resume Challenge, built entirely on AWS Cloud. The project features a static website hosted in an AWS S3 bucket, developed using HTML, CSS, and JavaScript. I utilized Route 53 to manage the domain name, ACM to secure the site with SSL/TLS certificates, and CloudFront for fast content delivery, with automatic redirection of HTTP traffic to HTTPS for enhanced security.
+This is my Cloud Resume Project, built entirely on AWS Cloud. The project features a static website hosted in an AWS S3 bucket, developed using HTML, CSS, and JavaScript. I utilized Route 53 to manage the domain name, ACM to secure the site with SSL/TLS certificates, and CloudFront for fast content delivery, with automatic redirection of HTTP traffic to HTTPS for enhanced security.
 
 Additionally, I implemented a visitor counter using AWS Lambda functions, written in Python. The entire infrastructure, including the visitor counter, was automated and deployed using Terraform.
 
