@@ -189,6 +189,21 @@ header {
     text-decoration: underline var(--highlight-color) 2px;
 }
 
+.section-container > .profile-picture-container {
+    display: block;
+    min-width: 25%;
+    max-width: auto;
+}
+
+.profile-picture {
+    width: 210px;
+    align: center;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+}
+
+
 /* Footer */
 
 footer {
